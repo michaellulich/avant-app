@@ -1,0 +1,2 @@
+module CardActionsHelper
+end
