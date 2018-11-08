@@ -21,11 +21,6 @@ class Api::CardActionsController < ApplicationController
         current_balance: current_balance + params[:amount].to_f
       )
 
-    # # ALT ------
-    # @card_actions = current_cardholder.create_card_action(
-    #   params[:amount],
-    #   current_day
-    # )
     if @card_actions.save
       render "index.json.jbuilder"
     else 

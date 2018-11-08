@@ -41,22 +41,4 @@ class Cardholder < ApplicationRecord
     total_interest + final_balance
   end
 
-  #  ALT --------
-  # def new_card_action(amount, current_day)    
-  #   last_card_action = card_actions.last
-  #   current_balance = 0
-  #   if last_card_action
-  #     last_card_action.update(end_day: current_day)
-  #     current_balance = last_card_action.current_balance
-  #   end
-  #   card_action = CardAction.new(
-  #     cardholder_id: id,
-  #     debit: true,
-  #     amount: amount,
-  #     start_day: current_day,
-  #     current_balance: current_balance + amount.to_f
-  #   )
-  #   card_action
-  # end
-
 end
